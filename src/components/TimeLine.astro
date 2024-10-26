@@ -1,0 +1,31 @@
+---
+import TimeLineItem from "./TimeLineItem.astro";
+
+const DEGREES = [
+  {
+    date: "January 2023",
+    title: "System Engineer",
+    institute: "O&M University",
+    description:
+      "Fostering a bold spirit of technology research and development, driving multidisciplinary integration that transforms the future.",
+  },
+  {
+    date: "Octubre 2017",
+    title:
+      "Technical Bachelor's Degree in Digital Electronics and Microcomputing",
+    institute: "Instituto Politecnico Loyola",
+    description:
+      "Circuit design, mastery of logic gates, transistors and microcontroller programming in assembler.",
+  },
+];
+---
+
+<ol class="relative border-s border-slate-100/10 ml-5">
+  {
+    DEGREES.map((degree) => (
+      <li class="mb-10 ms-4">
+        <TimeLineItem {...degree} />
+      </li>
+    ))
+  }
+</ol>
