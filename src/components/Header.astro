@@ -1,8 +1,32 @@
-<header class="flex justify-center items-center">
-  <nav class="flex flex-row gap-8">
-    <a href="#home">Home</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Project</a>
-    <a href="#about">About me</a>
+<header
+  class="sticky mr-auto ml-auto top-3 backdrop-blur-sm z-10 w-fit flex justify-center items-center py-2 px-6 bg-[#13151a]/85 rounded-2xl border border-slate-700"
+>
+  <nav class="flex flex-row gap-8 text-base text-slate-300">
+    <a aria-label="home" class="" href="#home">Home</a>
+    <a aria-label="education" href="#education">Education</a>
+    <a aria-label="projects" href="#projects">Project</a>
+    <a aria-label="about" href="#about">About me</a>
   </nav>
 </header>
+
+<script>
+  let currentSection = "home";
+  window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("header nav a");
+
+    sections.forEach((section) => {
+      if (window.scrollY >= section.offsetTop - section.clientHeight / 4) {
+        currentSection = section.id;
+      }
+    });
+
+    navItems.forEach((navItem) => {
+      if (navItem.ariaLabel === currentSection) {
+        navItem.classList.add("text-teal-500");
+      } else {
+        navItem.classList.remove("text-teal-500");
+      }
+    });
+  });
+</script>
