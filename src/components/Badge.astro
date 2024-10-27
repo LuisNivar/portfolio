@@ -1,4 +1,9 @@
 <span
-  class="font-normal border rounded-full bg-slate-700/20 border-slate-500 text-slate-400 hover:scale-105 transition-all flex items-center justify-center gap-3 px-4 py-1 text-base"
-  ><slot /></span
+  class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-base text-slate-300 rounded-2xl group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-teal-400 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
 >
+  <span
+    class="relative px-4 py-1.5 transition-all ease-in duration-75 bg-slate-900 rounded-2xl group-hover:bg-opacity-85"
+  >
+    <slot />
+  </span>
+</span>

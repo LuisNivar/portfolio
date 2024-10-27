@@ -55,8 +55,8 @@ const PROJECTS = [
 <div class="flex gap-20 items-center flex-col">
   {
     PROJECTS.map(({ title, description, link, github, image, tags }) => (
-      <article class="flex gap-8 items-start">
-        <div class="w-2/5 inline-block overflow-hidden rounded-xl border transition-colors border-slate-600 hover:border-slate-400">
+      <article class="flex gap-8 items-start flex-col sm:flex-row">
+        <div class="w-full sm:w-2/5 inline-block overflow-hidden rounded-xl border transition-colors border-slate-600 hover:border-slate-400">
           <img
             class="hover:scale-110 duration-300 transition-transform"
             src={image}
@@ -64,9 +64,9 @@ const PROJECTS = [
           />
         </div>
 
-        <div class="min-h-full w-3/5 flex flex-col justify-between gap-2">
+        <div class="w-full min-h-full sm:w-3/5 flex flex-col justify-between gap-2">
           <header class="flex flex-col gap-2">
-            <h3 class="text-3xl font-semibold">{title}</h3>
+            <h3 class="text-2xl sm:text-3xl font-semibold">{title}</h3>
             <ul class="flex items-center gap-1">
               {tags.map((tag) => (
                 <li>
