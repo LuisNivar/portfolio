@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
-import GithubIcon from "../components/icons/Github.astro";
-import LikedinIcon from "../components/icons/Linkedin.astro";
+import GithubIcon from "../icons/Github.astro";
+import LikedinIcon from "../icons/Linkedin.astro";
 import SocialPill from "../components/SocialPill.astro";
 import TimeLine from "../components/TimeLine.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import EducationIcon from "../components/icons/Education.astro";
+import EducationIcon from "../icons/Education.astro";
+import ProjectIcon from "../icons/Project.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -15,7 +17,7 @@ import EducationIcon from "../components/icons/Education.astro";
   description="If you wonder where is a developer who knows how offer solutions instead of pure code... I'm Luis Nivar, the man that you looking for. "
 >
   <main>
-    <SectionContainer id="home" class="py-20">
+    <SectionContainer id="home">
       <header class="flex items-center gap-1 sm:gap-4 sm:flex-row flex-col">
         <h1 class="text-white text-[42px] sm:text-5xl font-bold">
           Hi! I'm <span
@@ -29,7 +31,7 @@ import EducationIcon from "../components/icons/Education.astro";
           rel="noopener noreferrer"><Badge>Available to work</Badge></a
         >
       </header>
-      <h2 class="text-xl text-slate-300 text-pretty">
+      <h2 class="text-xl text-slate-300 text-pretty max-w-[650px]">
         Systems Engineer from the O&M University, Dominican Republic. I am not
         offering to fill a vacancy with another developer, but with <span
           class="text-teal-400"
@@ -55,6 +57,13 @@ import EducationIcon from "../components/icons/Education.astro";
         Education
       </h2>
       <TimeLine />
+    </SectionContainer>
+    <SectionContainer id="projects">
+      <h2 class="text-white text-3xl font-bold flex items-center gap-4">
+        <ProjectIcon class="size-10" />
+        Projects
+      </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>
