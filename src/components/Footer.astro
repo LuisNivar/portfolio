@@ -1,3 +1,28 @@
-<footer class="flex px-12 items-center py-4 mt-24 text-slate-500">
-  © Luis Nivar
+---
+import GithubIcon from "../icons/Github.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+---
+
+<footer
+  class="flex px-12 align-middle text-slate-400 justify-between py-4 mt-24 bg-[#13151a]/85 backdrop-blur-sm"
+>
+  <span class="text-base">© Luis Nivar</span>
+  <span class="flex align-middle gap-4">
+    <a
+      class="hover:text-teal-500"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://github.com/LuisNivar"
+    >
+      <GithubIcon class="size-6" />
+    </a>
+    <a
+      class="hover:text-teal-500"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.linkedin.com/in/luis-nivar/"
+    >
+      <LinkedinIcon class="size-6" />
+    </a>
+  </span>
 </footer>
