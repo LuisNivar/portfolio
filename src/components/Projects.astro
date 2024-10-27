@@ -4,14 +4,31 @@ import LinkIcon from "../icons/Link.astro";
 import Link from "./Link.astro";
 import Pills from "./Pills.astro";
 
-const PROJECTS = [
+import { Image } from "astro:assets";
+
+import JotterImage from "../projects/jotter-note.webp";
+import MyExcelImage from "../projects/my-excel-js.webp";
+import Elegat2048 from "../projects/elegant-2048.webp";
+import MyAsteroidImage from "../projects/my-asteroid.webp";
+import COOPACSMUSUImage from "../projects/COOPACSMUSU.webp";
+
+interface project {
+  title: string;
+  description: string;
+  link?: string;
+  github: string;
+  tags: Array<string>;
+  image: ImageMetadata;
+}
+
+const PROJECTS: Array<project> = [
   {
     title: "Jotter",
     link: "https://jotternotes.vercel.app/",
     github: "https://github.com/jot-it/jotter",
     description:
       "Jotter is a collaborative text editor that focuses on simplicity and your productivity. It features a clean toolbar-free user interface that helps you keep your hands where they are more useful on the keyboard.",
-    image: "./src/projects/jotter-note.webp",
+    image: JotterImage,
     tags: ["NextJs", "TypeScript", "Yjs", "Lexical"],
   },
   {
@@ -20,7 +37,7 @@ const PROJECTS = [
     github: "https://github.com/LuisNivar/my-excel-js",
     description:
       "It's a basic clone of excel made with vanilla JavaScript, Css and HTML. You can use formulas like Sum, Average, Concat, Today... also use range, math expression, copy and pastes columns, cells and rows.",
-    image: "./src/projects/my-excel-js.webp",
+    image: MyExcelImage,
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -29,7 +46,7 @@ const PROJECTS = [
     github: "https://github.com/LuisNivar/my2048",
     description:
       "It's a clone of the popular 2048 game built using React. It is a single-player puzzle game where the objective is to combine tiles with the same value to create a tile with the value of 2048.",
-    image: "./src/projects/elegant-2048.webp",
+    image: Elegat2048,
     tags: ["React", "TypeScript", "Css"],
   },
   {
@@ -38,7 +55,7 @@ const PROJECTS = [
     github: "https://github.com/LuisNivar/my-asteroid",
     description:
       "It's a clone of the iconic arcade game Asteroids by Atari in 1979. It's a single player-game arcade game where you need to destroy astros and save yourself of collisions while you make points.",
-    image: "./src/projects/my-asteroid.webp",
+    image: MyAsteroidImage,
     tags: ["P5Js", "HTML", "Css"],
   },
   {
@@ -46,7 +63,7 @@ const PROJECTS = [
     github: "https://github.com/LuisNivar/COOPACSMUSU",
     description:
       "Financial management software for the COOPACMUSU cooperative.",
-    image: "./src/projects/COOPACSMUSU.webp",
+    image: COOPACSMUSUImage,
     tags: [".Net Framework", "C#", "SQL Server"],
   },
 ];
@@ -57,7 +74,7 @@ const PROJECTS = [
     PROJECTS.map(({ title, description, link, github, image, tags }) => (
       <article class="flex gap-8 items-start flex-col sm:flex-row">
         <div class="w-full sm:w-2/5 inline-block overflow-hidden rounded-xl border transition-colors border-slate-600 hover:border-slate-400">
-          <img
+          <Image
             class="hover:scale-110 duration-300 transition-transform"
             src={image}
             alt="Project print screen"
