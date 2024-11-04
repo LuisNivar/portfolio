@@ -1,21 +1,22 @@
 ---
 import TimeLineItem from "./TimeLineItem.astro";
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 const DEGREES = [
   {
-    date: "January 2023",
-    title: "System Engineer",
-    institute: "O&M University",
-    description:
-      "Fostering a bold spirit of technology research and development, driving multidisciplinary integration that transforms the future.",
+    date: `${i18n.EDUCATION.OYM.DATE}`,
+    title: `${i18n.EDUCATION.OYM.TITLE}`,
+    institute: `${i18n.EDUCATION.OYM.INSTITUTE}`,
+    description: `${i18n.EDUCATION.OYM.DESCRIPTION}`,
   },
   {
-    date: "Octubre 2017",
-    title:
-      "Technical Bachelor's Degree in Digital Electronics and Microcomputing",
-    institute: "Instituto Politecnico Loyola",
-    description:
-      "Circuit design, mastery of logic gates, transistors and microcontroller programming in assembler.",
+    date: `${i18n.EDUCATION.IPL.DATE}`,
+    title: `${i18n.EDUCATION.IPL.TITLE}`,
+    institute: `${i18n.EDUCATION.IPL.INSTITUTE}`,
+    description: `${i18n.EDUCATION.IPL.DESCRIPTION}`,
   },
 ];
 ---

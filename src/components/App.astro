@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../icons/Github.astro";
+import LikedinIcon from "../icons/Linkedin.astro";
+import SocialPill from "../components/SocialPill.astro";
+import TimeLine from "../components/TimeLine.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import EducationIcon from "../icons/Education.astro";
+import ProjectIcon from "../icons/Project.astro";
+import Projects from "../components/Projects.astro";
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title={i18n.SEO.TITLE} description={i18n.SEO.DESCRIPTION}>
+  <main>
+    <SectionContainer id="home">
+      <header class="flex items-center gap-1 sm:gap-4 sm:flex-row flex-col">
+        <h1 class="text-white text-4xl sm:text-5xl font-bold">
+          {i18n.HERO.TITLE}
+          <span
+            class="bg-gradient-to-r text-transparent bg-clip-text from-teal-400 via-emerald-500 to-cyan-600"
+            >Luis Nivar</span
+          >
+        </h1>
+        <a
+          href="https://www.linkedin.com/in/luis-nivar/"
+          target="_blank"
+          rel="noopener noreferrer"><Badge>{i18n.HERO.WORK_BUTTON}</Badge></a
+        >
+      </header>
+      <h2 class="text-xl text-slate-300 text-pretty max-w-[650px]">
+        {i18n.HERO.DESCRIPTION}
+        <span class="text-teal-500">{i18n.HERO.DESCRIPTION_MARKED}</span>.
+      </h2>
+
+      <nav class="flex items-center gap-2">
+        <SocialPill href="https://github.com/LuisNivar">
+          <GithubIcon class="size-5" />
+          GitHub</SocialPill
+        >
+        <SocialPill href="https://www.linkedin.com/in/luis-nivar/">
+          <LikedinIcon class="size-5" />
+          LinkedIn</SocialPill
+        >
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="education">
+      <h2 class="text-white text-3xl font-bold flex items-center gap-4">
+        <EducationIcon class="size-10" />
+        {i18n.EDUCATION.TITLE}
+      </h2>
+      <TimeLine />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <h2 class="text-white text-3xl font-bold flex items-center gap-4">
+        <ProjectIcon class="size-10" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    line-height: 1.6;
+  }
+</style>

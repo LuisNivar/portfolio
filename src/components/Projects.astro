@@ -11,6 +11,10 @@ import MyExcelImage from "../projects/my-excel-js.webp";
 import Elegat2048 from "../projects/elegant-2048.webp";
 import MyAsteroidImage from "../projects/my-asteroid.webp";
 import COOPACSMUSUImage from "../projects/COOPACSMUSU.webp";
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 interface project {
   title: string;
@@ -26,8 +30,7 @@ const PROJECTS: Array<project> = [
     title: "Jotter",
     link: "https://jotternotes.vercel.app/",
     github: "https://github.com/jot-it/jotter",
-    description:
-      "Jotter is a collaborative text editor that focuses on simplicity and your productivity. It features a clean toolbar-free user interface that helps you keep your hands where they are more useful on the keyboard.",
+    description: `${i18n.PROJECTS.JOTTER.DESCRIPTION}`,
     image: JotterImage,
     tags: ["NextJs", "TypeScript", "Yjs", "Lexical"],
   },
@@ -35,8 +38,7 @@ const PROJECTS: Array<project> = [
     title: "My Excel Js",
     link: "https://my-excel-js-luis-nivar.vercel.app",
     github: "https://github.com/LuisNivar/my-excel-js",
-    description:
-      "It's a basic clone of excel made with vanilla JavaScript, Css and HTML. You can use formulas like Sum, Average, Concat, Today... also use range, math expression, copy and pastes columns, cells and rows.",
+    description: `${i18n.PROJECTS.MYEXCEL.DESCRIPTION}`,
     image: MyExcelImage,
     tags: ["HTML", "CSS", "JavaScript"],
   },
@@ -44,8 +46,7 @@ const PROJECTS: Array<project> = [
     title: "Elegant 2048",
     link: "https://luisnivar.github.io/my2048/",
     github: "https://github.com/LuisNivar/my2048",
-    description:
-      "It's a clone of the popular 2048 game built using React. It is a single-player puzzle game where the objective is to combine tiles with the same value to create a tile with the value of 2048.",
+    description: `${i18n.PROJECTS.ELEGANT2048.DESCRIPTION}`,
     image: Elegat2048,
     tags: ["React", "TypeScript", "Css"],
   },
@@ -53,16 +54,14 @@ const PROJECTS: Array<project> = [
     title: "My Asteroid",
     link: "https://my-asteroid-luis-nivar.vercel.app/",
     github: "https://github.com/LuisNivar/my-asteroid",
-    description:
-      "It's a clone of the iconic arcade game Asteroids by Atari in 1979. It's a single player-game arcade game where you need to destroy astros and save yourself of collisions while you make points.",
+    description: `${i18n.PROJECTS.MYASTEROID.DESCRIPTION}`,
     image: MyAsteroidImage,
     tags: ["P5Js", "HTML", "Css"],
   },
   {
     title: "COOPACSMUSU",
     github: "https://github.com/LuisNivar/COOPACSMUSU",
-    description:
-      "Financial management software for the COOPACMUSU cooperative.",
+    description: `${i18n.PROJECTS.COOPACSMUSU.DESCRIPTION}`,
     image: COOPACSMUSUImage,
     tags: [".Net Framework", "C#", "SQL Server"],
   },
@@ -93,7 +92,7 @@ const PROJECTS: Array<project> = [
             </ul>
           </header>
 
-          <p class="text-slate-400">{description}</p>
+          <p class="text-slate-400 text-pretty">{description}</p>
 
           <ul class="flex gap-2 items-center">
             <Link href={github}>

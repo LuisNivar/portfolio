@@ -11,4 +11,11 @@ export default defineConfig({
   adapter: vercel({
     imageService: true,
   }),
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "es"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });
