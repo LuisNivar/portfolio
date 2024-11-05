@@ -1,0 +1,45 @@
+---
+import ChevronIcon from "../icons/chevron.astro";
+import { LANGUAGES, getLangFromUrl, LOCALE } from "./../i18n/index";
+
+const currentLang = getLangFromUrl(Astro.url);
+const currentLocalData = LOCALE[currentLang];
+
+const otherLocales = Object.values(LOCALE).filter(
+  (locale) => locale.code !== currentLang
+);
+---
+
+<div class="relative inline-block text-left">
+  <div
+    class="group rounded-md text-base bg-transparent hover:bg-slate-400/10 transition-all"
+  >
+    <button
+      type="button"
+      class="inline-flex justify-start items-center w-full gap-x-2 px-3 py-2"
+      aria-expanded="true"
+      aria-haspopup="true"
+    >
+      <currentLocalData.flag class="size-4 z-20" />
+      {currentLang}
+      <ChevronIcon class="size-5 group-hover:rotate-180" />
+    </button>
+    <ul
+      class="group-hover:block text-sm group-hover:animate-fade-down group-hover:animate-duration-200 hidden pt-0.5 absolute w-full"
+    >
+      {
+        otherLocales.map((locale) => (
+          <li class="py-[2px]">
+            <a
+              class="rounded-md border-slate-800 border bg-slate-950 hover:bg-slate-900/95 whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2"
+              href={`/${locale.code === LANGUAGES.ENGLISH ? "" : locale.code}`}
+            >
+              <locale.flag class="size-5" />
+              {locale.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
