@@ -1,10 +1,25 @@
+---
+import { getI18N } from "../i18n";
+import LanguageSelector from "./LanguageSelector.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
 <header
   class="sticky mr-auto ml-auto top-3 backdrop-blur-sm z-20 w-fit flex justify-center items-center py-2 px-6 bg-[#13151a]/85 rounded-2xl border border-slate-700"
 >
-  <nav class="flex flex-row gap-8 text-base text-slate-300">
-    <a aria-label="home" class="" href="#home">Home</a>
-    <a aria-label="education" href="#education">Education</a>
-    <a aria-label="projects" href="#projects">Projects</a>
+  <nav class="flex flex-row gap-8 text-base items-center text-slate-300">
+    <a aria-label="home" class="hover:text-teal-500" href="#home"
+      >{i18n.HEADER.HOME}</a
+    >
+    <a aria-label="education" class="hover:text-teal-500" href="#education"
+      >{i18n.HEADER.EDUCATION}</a
+    >
+    <a aria-label="projects" class="hover:text-teal-500" href="#projects"
+      >{i18n.HEADER.PROJECTS}</a
+    >
+    <LanguageSelector />
   </nav>
 </header>
 
