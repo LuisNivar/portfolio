@@ -44,7 +44,7 @@
             "DESCRIPTION":"Es un clon del icónico juego arcade Asteroids, Atari 1979. Es un juego arcade para un solo jugador en el que debes destruir astros y salvarte de las colisiones mientras consigues puntos."
         },
         "COOPACSMUSU": {
-            "DESCRIPTION":"Software de Gestion Financiera para la cooperativa COOPACMUSU."
+            "DESCRIPTION":"Software de Gestion Financiera para la cooperativa COOPACMUSU. Maneja perfiles de socios, prestamos, ahorros, recibos, recibos, egresos/ingresos, dashboard y reportes."
         }
     }
 }
