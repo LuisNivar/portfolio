@@ -10,7 +10,7 @@
     },
     "HERO": {
         "TITLE": "Hi! I'm",
-        "DESCRIPTION": "Software developer solve customer needs through innovative solutions. Committed to building impactful projects that",
+        "DESCRIPTION": "Software developer solving customers needs through innovative solutions. Committed to building impactful projects that",
         "DESCRIPTION_MARKED": "provide real business value",
         "WORK_BUTTON": "Available to work"
     },
@@ -20,11 +20,11 @@
             "DATE" : "January 2023",
             "TITLE": "System Engineer",
             "INSTITUTE": "O&M University",
-            "DESCRIPTION": "Fostering a bold spirit of technology research and development, driving multidisciplinary integration that transforms the future."
+            "DESCRIPTION": "Information System (IS) analysis and design, data networking, SQL Server, risk management, .NET Framework fundamentals, and Windows Server configuration."
         },
         "IPL": {
             "DATE": "October 2017",
-            "TITLE": "Technical Bachelor's Degree in Digital Electronics and Microcomputing",
+            "TITLE": "Technical Degree in Digital Electronics and Microcomputing",
             "INSTITUTE": "Instituto Politecnico Loyola",
             "DESCRIPTION": "Circuit design, mastery of logic gates, transistors and microcontroller programming in assembler."
         } 
@@ -45,6 +45,10 @@
         },
         "COOPACSMUSU": {
             "DESCRIPTION":"Financial management software for the COOPACMUSU cooperative. Manage partner profiles, loans, savings, receipts, receipts, expenses/income, dashboard and reports."
+        },
+        "POSAM": {
+            "DESCRIPTION":"POS with supplier, inventory and bills modules, customer profiles, financial states dashboards, product tags, stock notifications and a reminder system."
         }
+        
     }
 }

@@ -20,7 +20,7 @@
             "DATE" : "Enero 2023",
             "TITLE": "Ingeniero en Sistemas y Computación",
             "INSTITUTE": "Universidad O&M",
-            "DESCRIPTION": "Fomentar un espíritu audaz de investigación y desarrollo tecnológico, impulsando la integración multidisciplinaria que transforma el futuro."
+            "DESCRIPTION": "Análisis y diseño de sistemas de información (SI), redes de datos, SQL Server, gestión de riesgos, fundamentos de .NET Framework y configuración de Windows Server."
         },
         "IPL": {
             "DATE": "Octubre 2017",
@@ -45,6 +45,9 @@
         },
         "COOPACSMUSU": {
             "DESCRIPTION":"Software de Gestion Financiera para la cooperativa COOPACMUSU. Maneja perfiles de socios, prestamos, ahorros, recibos, recibos, egresos/ingresos, dashboard y reportes."
+        },
+        "POSAM": {
+            "DESCRIPTION":"POS con modulo de proveedores, inventario, facturación, perfiles de clientes, gráficas interactivas de estados financieros, manejo de etiquetas de productos, notificación de existencias además del apartado de notas y recordatorios."
         }
     }
 }
