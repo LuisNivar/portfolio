@@ -11,6 +11,7 @@ import MyExcelImage from "../projects/my-excel-js.webp";
 import Elegat2048 from "../projects/elegant-2048.webp";
 import MyAsteroidImage from "../projects/my-asteroid.webp";
 import COOPACSMUSUImage from "../projects/COOPACSMUSU.webp";
+import POSAMImage from "../projects/POS-Acurio-Marisol.webp";
 import { getI18N } from "../i18n";
 
 const { currentLocale } = Astro;
@@ -63,6 +64,13 @@ const PROJECTS: Array<project> = [
     github: "https://github.com/LuisNivar/COOPACSMUSU",
     description: `${i18n.PROJECTS.COOPACSMUSU.DESCRIPTION}`,
     image: COOPACSMUSUImage,
+    tags: [".Net Framework", "C#", "SQL Server"],
+  },
+  {
+    title: "POS Acuario Marisol",
+    github: "https://github.com/LuisNivar/POS_Acuario-Marisol",
+    description: `${i18n.PROJECTS.POSAM.DESCRIPTION}`,
+    image: POSAMImage,
     tags: [".Net Framework", "C#", "SQL Server"],
   },
 ];

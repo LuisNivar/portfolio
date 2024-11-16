@@ -45,6 +45,10 @@
         },
         "COOPACSMUSU": {
             "DESCRIPTION":"Financial management software for the COOPACMUSU cooperative. Manage partner profiles, loans, savings, receipts, receipts, expenses/income, dashboard and reports."
+        },
+        "POSAM": {
+            "DESCRIPTION":"POS with supplier, inventory and bills modules, customer profiles, financial states dashboards, product tags, stock notifications and a reminder system."
         }
+        
     }
 }

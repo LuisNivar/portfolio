@@ -45,6 +45,9 @@
         },
         "COOPACSMUSU": {
             "DESCRIPTION":"Software de Gestion Financiera para la cooperativa COOPACMUSU. Maneja perfiles de socios, prestamos, ahorros, recibos, recibos, egresos/ingresos, dashboard y reportes."
+        },
+        "POSAM": {
+            "DESCRIPTION":"POS con modulo de proveedores, inventario, facturación, perfiles de clientes, gráficas interactivas de estados financieros, manejo de etiquetas de productos, notificación de existencias además del apartado de notas y recordatorios."
         }
     }
 }
