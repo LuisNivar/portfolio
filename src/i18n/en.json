@@ -1,54 +1,56 @@
 {
-    "SEO" : {
-        "TITLE" : "Luis Nivar | Porfolio • Developer",
-        "DESCRIPTION": "If you wonder where is a developer who knows how offer solutions instead of pure code... I'm Luis Nivar, the man that you looking for."
-    }, 
-    "HEADER" : {
-        "HOME": "Home",
-        "EDUCATION": "Education",
-        "PROJECTS": "Projects"
+  "SEO": {
+    "TITLE": "Luis Nivar | Portfolio • Developer",
+    "DESCRIPTION": "If you wonder where is a developer who knows how offer solutions instead of pure code... I'm Luis Nivar, the man that you looking for."
+  },
+  "HEADER": {
+    "HOME": "Home",
+    "EDUCATION": "Education",
+    "PROJECTS": "Projects"
+  },
+  "HERO": {
+    "TITLE": "Hi! I'm",
+    "DESCRIPTION": "Software developer solving customers needs through innovative solutions. Committed to building impactful projects that",
+    "DESCRIPTION_MARKED": "provide real business value",
+    "WORK_BUTTON": "Available to work"
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "OYM": {
+      "DATE": "January 2023",
+      "TITLE": "System Engineer",
+      "INSTITUTE": "O&M University",
+      "DESCRIPTION": "Information System (IS) analysis and design, data networking, SQL Server, risk management, .NET Framework fundamentals, and Windows Server configuration."
     },
-    "HERO": {
-        "TITLE": "Hi! I'm",
-        "DESCRIPTION": "Software developer solving customers needs through innovative solutions. Committed to building impactful projects that",
-        "DESCRIPTION_MARKED": "provide real business value",
-        "WORK_BUTTON": "Available to work"
-    },
-    "EDUCATION" : {
-        "TITLE": "Education",
-        "OYM" : {
-            "DATE" : "January 2023",
-            "TITLE": "System Engineer",
-            "INSTITUTE": "O&M University",
-            "DESCRIPTION": "Information System (IS) analysis and design, data networking, SQL Server, risk management, .NET Framework fundamentals, and Windows Server configuration."
-        },
-        "IPL": {
-            "DATE": "October 2017",
-            "TITLE": "Technical Degree in Digital Electronics and Microcomputing",
-            "INSTITUTE": "Instituto Politecnico Loyola",
-            "DESCRIPTION": "Circuit design, mastery of logic gates, transistors and microcontroller programming in assembler."
-        } 
-    },
-    "PROJECTS": {
-        "TITLE" : "Projects",
-         "JOTTER": {
-            "DESCRIPTION": "Jotter is a collaborative text editor that focuses on simplicity and your productivity. It features a clean toolbar-free user interface that helps you keep your hands where they are more useful on the keyboard."
-         },
-         "MYEXCEL": {
-            "DESCRIPTION": "It's a basic clone of excel made with vanilla JavaScript, Css and HTML. You can use formulas like Sum, Average, Concat, Today... also use range, math expression, copy and pastes columns, cells and rows."
-         },
-         "ELEGANT2048": {
-            "DESCRIPTION": "It's a clone of the popular 2048 game built using React. It is a single-player puzzle game where the objective is to combine tiles with the same value to create a tile with the value of 2048."
-        },
-        "MYASTEROID": {
-            "DESCRIPTION":"It's a clone of the iconic arcade game Asteroids by Atari in 1979. It's a single player-game arcade game where you need to destroy astros and save yourself of collisions while you make points."
-        },
-        "COOPACSMUSU": {
-            "DESCRIPTION":"Financial management software for the COOPACMUSU cooperative. Manage partner profiles, loans, savings, receipts, receipts, expenses/income, dashboard and reports."
-        },
-        "POSAM": {
-            "DESCRIPTION":"POS with supplier, inventory and bills modules, customer profiles, financial states dashboards, product tags, stock notifications and a reminder system."
-        }
-        
+    "IPL": {
+      "DATE": "October 2017",
+      "TITLE": "Technical Degree in Digital Electronics and Microcomputing",
+      "INSTITUTE": "Instituto Politecnico Loyola",
+      "DESCRIPTION": "Circuit design, mastery of logic gates, transistors and microcontroller programming in assembler."
     }
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "JOTTER": {
+      "DESCRIPTION": "Jotter is a collaborative text editor that focuses on simplicity and your productivity. It features a clean toolbar-free user interface that helps you keep your hands where they are more useful on the keyboard."
+    },
+    "MYEXCEL": {
+      "DESCRIPTION": "It's a basic clone of excel made with vanilla JavaScript, Css and HTML. You can use formulas like Sum, Average, Concat, Today... also use range, math expression, copy and pastes columns, cells and rows."
+    },
+    "MYKANBANBOARD": {
+      "DESCRIPTION": "It's a simple but powerful project management tool that allows the user to work on multiple boards and customize them. Admit drag and drop, responsive design, and accessibility."
+    },
+    "ELEGANT2048": {
+      "DESCRIPTION": "It's a clone of the popular 2048 game built using React. It is a single-player puzzle game where the objective is to combine tiles with the same value to create a tile with the value of 2048."
+    },
+    "MYASTEROID": {
+      "DESCRIPTION": "It's a clone of the iconic arcade game Asteroids by Atari in 1979. It's a single player-game arcade game where you need to destroy astros and save yourself of collisions while you make points."
+    },
+    "COOPACSMUSU": {
+      "DESCRIPTION": "Financial management software for the COOPACMUSU cooperative. Manage partner profiles, loans, savings, receipts, receipts, expenses/income, dashboard and reports."
+    },
+    "POSAM": {
+      "DESCRIPTION": "POS with supplier, inventory and bills modules, customer profiles, financial states dashboards, product tags, stock notifications and a reminder system."
+    }
+  }
 }

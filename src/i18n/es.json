@@ -1,53 +1,56 @@
 {
-    "SEO": {
-        "TITLE" : "Luis Nivar | Portafolio • Desarrollador",
-        "DESCRIPTION": "Si estas buscando un desarrollador que ofrece soluciones en lugar de puro código... Soy Luis Nivar, la persona que estabas buscando."
+  "SEO": {
+    "TITLE": "Luis Nivar | Portafolio • Desarrollador",
+    "DESCRIPTION": "Si estas buscando un desarrollador que ofrece soluciones en lugar de puro código... Soy Luis Nivar, la persona que estabas buscando."
+  },
+  "HEADER": {
+    "HOME": "Inicio",
+    "EDUCATION": "Educación",
+    "PROJECTS": "Proyectos"
+  },
+  "HERO": {
+    "TITLE": "¡Hey!, soy",
+    "DESCRIPTION": "Un desarrollador de Software que provee soluciones innovadoras a las necesidades de los clientes. Comprometido con la creación de proyectos de impacto que",
+    "DESCRIPTION_MARKED": "aporten valor comercial real",
+    "WORK_BUTTON": "Disponible para trabajar"
+  },
+  "EDUCATION": {
+    "TITLE": "Educación",
+    "OYM": {
+      "DATE": "Enero 2023",
+      "TITLE": "Ingeniero en Sistemas y Computación",
+      "INSTITUTE": "Universidad O&M",
+      "DESCRIPTION": "Análisis y diseño de sistemas de información (SI), redes de datos, SQL Server, gestión de riesgos, fundamentos de .NET Framework y configuración de Windows Server."
     },
-    "HEADER" : {
-        "HOME": "Inicio",
-        "EDUCATION": "Educación",
-        "PROJECTS": "Proyectos"
-    },
-    "HERO":{
-        "TITLE": "¡Hey!, soy",
-        "DESCRIPTION": "Un desarrollador de Software que provee soluciones innovadoras a las necesidades de los clientes. Comprometido con la creación de proyectos de impacto que",
-        "DESCRIPTION_MARKED": "aporten valor comercial real",
-        "WORK_BUTTON": "Disponible para trabajar"
-    },
-    "EDUCATION" : {
-        "TITLE": "Educación",
-        "OYM" : {
-            "DATE" : "Enero 2023",
-            "TITLE": "Ingeniero en Sistemas y Computación",
-            "INSTITUTE": "Universidad O&M",
-            "DESCRIPTION": "Análisis y diseño de sistemas de información (SI), redes de datos, SQL Server, gestión de riesgos, fundamentos de .NET Framework y configuración de Windows Server."
-        },
-        "IPL": {
-            "DATE": "Octubre 2017",
-            "TITLE": "Bachiller técnico en Electrócnica Digital y Microcomputación.",
-            "INSTITUTE": "Instituto Politécnico Loyola",
-            "DESCRIPTION": "Diseño de circuitos, dominio de puertas lógicas, transistores y programación de microcontroladores en ensamblador."
-        }
-    },
-    "PROJECTS": {
-        "TITLE" : "Proyectos",
-         "JOTTER": {
-            "DESCRIPTION": "Jotter es un editor de texto colaborativo que se centra en la simplicidad y la productividad. Cuenta con una interfaz de usuario clara y sin barras de herramientas, lo que ayuda a mantener tus manos donde son más útiles, en el teclado."
-         },
-         "MYEXCEL": {
-            "DESCRIPTION": "Es un clon básico de Excel hecho con JavaScript, CSS y HTML. Puedes usar fórmulas como Suma, Promedio, Concatenar, Hoy... además de poder referenciar por rangos, utilizar expresiones matemáticas, junto a la posibilidad de copiar y pegar columnas, celdas y filas."
-         },
-         "ELEGANT2048": {
-            "DESCRIPTION": "Es un clon del popular juego 2048 creado con React. Juego para un jugador cuyo objetivo es combinar fichas del mismo valor para crear una ficha que valga 2048."
-        },
-        "MYASTEROID": {
-            "DESCRIPTION":"Es un clon del icónico juego arcade Asteroids, Atari 1979. Es un juego arcade para un solo jugador en el que debes destruir astros y salvarte de las colisiones mientras consigues puntos."
-        },
-        "COOPACSMUSU": {
-            "DESCRIPTION":"Software de Gestion Financiera para la cooperativa COOPACMUSU. Maneja perfiles de socios, prestamos, ahorros, recibos, recibos, egresos/ingresos, dashboard y reportes."
-        },
-        "POSAM": {
-            "DESCRIPTION":"POS con modulo de proveedores, inventario, facturación, perfiles de clientes, gráficas interactivas de estados financieros, manejo de etiquetas de productos, notificación de existencias además del apartado de notas y recordatorios."
-        }
+    "IPL": {
+      "DATE": "Octubre 2017",
+      "TITLE": "Bachiller técnico en Electrócnica Digital y Microcomputación.",
+      "INSTITUTE": "Instituto Politécnico Loyola",
+      "DESCRIPTION": "Diseño de circuitos, dominio de puertas lógicas, transistores y programación de microcontroladores en ensamblador."
     }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "JOTTER": {
+      "DESCRIPTION": "Jotter es un editor de texto colaborativo que se centra en la simplicidad y la productividad. Cuenta con una interfaz de usuario clara y sin barras de herramientas, lo que ayuda a mantener tus manos donde son más útiles, en el teclado."
+    },
+    "MYEXCEL": {
+      "DESCRIPTION": "Es un clon básico de Excel hecho con JavaScript, CSS y HTML. Puedes usar fórmulas como: Suma, Promedio, Concatenar, Hoy... además de poder referenciar por rangos, utilizar expresiones matemáticas, junto a la posibilidad de copiar y pegar columnas, celdas y filas."
+    },
+    "MYKANBANBOARD": {
+      "DESCRIPTION": "Es una herramienta de gestión de proyectos que permite al usuario trabajar en varios tableros así como personalizar sus columnas y fondo."
+    },
+    "ELEGANT2048": {
+      "DESCRIPTION": "Es un clon del popular juego 2048 creado con React. Juego para un jugador cuyo objetivo es combinar fichas del mismo valor para crear una ficha que valga 2048."
+    },
+    "MYASTEROID": {
+      "DESCRIPTION": "Es un clon del icónico juego arcade Asteroids, Atari 1979. Es un juego arcade para un solo jugador en el que debes destruir astros y salvarte de las colisiones mientras consigues puntos."
+    },
+    "COOPACSMUSU": {
+      "DESCRIPTION": "Software de Gestion Financiera para la cooperativa COOPACMUSU. Maneja perfiles de socios, prestamos, ahorros, recibos, recibos, egresos/ingresos, dashboard y reportes."
+    },
+    "POSAM": {
+      "DESCRIPTION": "POS con modulo de proveedores, inventario, facturación, perfiles de clientes, gráficas interactivas de estados financieros, manejo de etiquetas de productos, notificación de existencias además del apartado de notas y recordatorios."
+    }
+  }
 }
