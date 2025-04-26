@@ -13,6 +13,8 @@ import MyAsteroidImage from "../projects/my-asteroid.webp";
 import COOPACSMUSUImage from "../projects/COOPACSMUSU.webp";
 import POSAMImage from "../projects/POS-Acurio-Marisol.webp";
 import MyKanbanBoard from "../projects/my-kanban-board.webp";
+import EShopBackend from "../projects/eshop-backend.webp";
+
 import { getI18N } from "../i18n";
 
 const { currentLocale } = Astro;
@@ -37,20 +39,36 @@ const PROJECTS: Array<project> = [
     tags: ["NextJs", "TypeScript", "Yjs", "Lexical"],
   },
   {
-    title: "My Excel Js",
-    link: "https://my-excel-js-luis-nivar.vercel.app",
-    github: "https://github.com/LuisNivar/my-excel-js",
-    description: `${i18n.PROJECTS.MYEXCEL.DESCRIPTION}`,
-    image: MyExcelImage,
-    tags: ["HTML", "CSS", "JavaScript"],
-  },
-  {
     title: "My Kanban Board",
     link: "https://my-kanban-board-luis-nivar.vercel.app/",
     github: "https://github.com/LuisNivar/my-kanban-board",
     description: `${i18n.PROJECTS.MYKANBANBOARD.DESCRIPTION}`,
     image: MyKanbanBoard,
     tags: ["React", "TypeScript", "TailwindCss"],
+  },
+  {
+    title: "EShop Backend",
+    github: "https://github.com/LuisNivar/eshop-backend",
+    description: `${i18n.PROJECTS.ESHOPBACKEND.DESCRIPTION}`,
+    image: EShopBackend,
+    tags: [
+      "ASP.NET Core",
+      "C#",
+      "Docker",
+      "Redis",
+      "Stripe",
+      "API Minimal",
+      "EntityFramework",
+      "PostgreSQL",
+    ],
+  },
+  {
+    title: "My Excel Js",
+    link: "https://my-excel-js-luis-nivar.vercel.app",
+    github: "https://github.com/LuisNivar/my-excel-js",
+    description: `${i18n.PROJECTS.MYEXCEL.DESCRIPTION}`,
+    image: MyExcelImage,
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Elegant 2048",
@@ -100,7 +118,7 @@ const PROJECTS: Array<project> = [
         <div class="w-full min-h-full sm:w-3/5 flex flex-col justify-between gap-2">
           <header class="flex flex-col gap-2">
             <h3 class="text-2xl sm:text-3xl font-semibold">{title}</h3>
-            <ul class="flex items-center gap-1">
+            <ul class="flex items-center gap-1 flex-wrap">
               {tags.map((tag) => (
                 <li>
                   <Pills>{tag}</Pills>

@@ -6,7 +6,8 @@
   "HEADER": {
     "HOME": "Inicio",
     "EDUCATION": "Educación",
-    "PROJECTS": "Proyectos"
+    "PROJECTS": "Proyectos",
+    "TECH_CHALLENGES": "Retos"
   },
   "HERO": {
     "TITLE": "¡Hey!, soy",
@@ -40,6 +41,9 @@
     "MYKANBANBOARD": {
       "DESCRIPTION": "Es una herramienta de gestión de proyectos que permite al usuario trabajar en varios tableros así como personalizar sus columnas y fondo."
     },
+    "ESHOPBACKEND": {
+      "DESCRIPTION": "Backend de una tienda online desarrollado en .NET con Minimal APIs, usando EF Core, PSQL, Redis (carrito) y Stripe (pagos) orquestado con Docker."
+    },
     "ELEGANT2048": {
       "DESCRIPTION": "Es un clon del popular juego 2048 creado con React. Juego para un jugador cuyo objetivo es combinar fichas del mismo valor para crear una ficha que valga 2048."
     },
@@ -51,6 +55,33 @@
     },
     "POSAM": {
       "DESCRIPTION": "POS con modulo de proveedores, inventario, facturación, perfiles de clientes, gráficas interactivas de estados financieros, manejo de etiquetas de productos, notificación de existencias además del apartado de notas y recordatorios."
+    }
+  },
+  "TECH_CHALLENGES": {
+    "TITLE": "Retos Técnicos",
+    "HPL": {
+      "TITLE": "HPL 🤜",
+      "DESCRIPTION": "Un traductor de HPL (Hand Programming Language)."
+    },
+    "RANDOM_CAT_FACT": {
+      "TITLE": "Random Cat Fetch 😺",
+      "DESCRIPTION": "Recuperar de un API un hecho aleatorio sobre gatos, luego con las tres primeras palabras de este, recuperar una imnagen y mostras ambas cosas."
+    },
+    "USER_TABLE": {
+      "TITLE": "User Table 🙎‍♂️",
+      "DESCRIPTION": "Mostrar una colleción de datos de usarios falsos, obtenidos de un API. Debes poder buscar, ordenar y filtrar mateniendo el rendimiento."
+    },
+    "FULLSTACK_JUNIOR": {
+      "TITLE": "Fullstack Junior 💻",
+      "DESCRIPTION": "Una colección de 7 retos de programación para junior fullstack."
+    },
+    "MOVIE_APP": {
+      "TITLE": "Movie App 🎥",
+      "DESCRIPTION": "Aplicación de películas que utiliza OmbdAPI con búsqueda y filtrado centrado en el rendimiento."
+    },
+    "SHOPPING_CART": {
+      "TITLE": "Shopping Cart 🛒",
+      "DESCRIPTION": "Tienda en linea con un carrito de compras, hecha con React."
     }
   }
 }
