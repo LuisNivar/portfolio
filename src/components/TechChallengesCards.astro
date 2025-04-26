@@ -1,0 +1,96 @@
+---
+import { getI18N } from "../i18n";
+import ExternalLinkIcon from "../icons/ExternalLink.astro";
+import DurationIcon from "../icons/Duration.astro";
+import Pills from "./Pills.astro";
+import clsx from "clsx";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+interface challeges {
+  title: string;
+  description: string;
+  github: string;
+  tags: Array<string>;
+  duration?: string;
+}
+
+const MAX_ROW_TEXT_LENGTH = 48;
+
+const CHALLENGES: Array<challeges> = [
+  {
+    title: i18n.TECH_CHALLENGES.HPL.TITLE,
+    description: i18n.TECH_CHALLENGES.HPL.DESCRIPTION,
+    github:
+      "https://github.com/LuisNivar/technical-test/tree/main/07-hand-challenge",
+    tags: ["JavaScript", "Turing machine"],
+  },
+  {
+    title: i18n.TECH_CHALLENGES.FULLSTACK_JUNIOR.TITLE,
+    description: i18n.TECH_CHALLENGES.FULLSTACK_JUNIOR.DESCRIPTION,
+    github:
+      "https://github.com/LuisNivar/technical-test/tree/main/06-fullstack-junior",
+    tags: ["Node", "JavaScript", "Testing", "Async", "API Rest"],
+    duration: "60 min",
+  },
+  {
+    title: i18n.TECH_CHALLENGES.MOVIE_APP.TITLE,
+    description: i18n.TECH_CHALLENGES.MOVIE_APP.DESCRIPTION,
+    github:
+      "https://github.com/LuisNivar/technical-test/tree/main/03-movie-app",
+    tags: ["React", "JavaScript", "Debounce"],
+    duration: "60 min",
+  },
+  {
+    title: i18n.TECH_CHALLENGES.SHOPPING_CART.TITLE,
+    description: i18n.TECH_CHALLENGES.SHOPPING_CART.DESCRIPTION,
+    github:
+      "https://github.com/LuisNivar/technical-test/tree/main/04-shopping-cart",
+    tags: ["React", "Vite", "TypeScript"],
+    duration: "60 min",
+  },
+];
+---
+
+<div
+  class="grid auto-rows-auto grid-flow-dense lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2"
+>
+  {
+    CHALLENGES.map((challenge) => {
+      const { title, description, tags, github, duration } = challenge;
+
+      const canBeIn2Rows = description.length > MAX_ROW_TEXT_LENGTH;
+      return (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class={clsx(
+            "lg:h-fit w-full group rounded-lg border border-slate-700 px-3 py-2 flex flex-col gap-1 transition-colors hover:border-slate-500 hover:bg-slate-500/5 ",
+            canBeIn2Rows && "lg:row-span-2 row-span-1 "
+          )}
+        >
+          <span class="flex gap-1 justify-between">
+            <h2 class="font-bold">{title}</h2>
+            <ExternalLinkIcon class="size-4 group-hover:size-5 transition-all group-hover:text-teal-400" />
+          </span>
+
+          <p class="text-slate-400 grow">{description}</p>
+          <span class="flex flex-wrap gap-1 mt-2 items-center">
+            {tags.map((tag) => (
+              <Pills>{tag}</Pills>
+            ))}
+          </span>
+
+          {duration && (
+            <span class="mt-2 self-end flex items-center gap-2 rounded-lg bg-slate-700 text-slate-200 w-fit px-2 py-1 text-xs">
+              <DurationIcon class="size-3" />
+              {duration}
+            </span>
+          )}
+        </a>
+      );
+    })
+  }
+</div>

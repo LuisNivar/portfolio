@@ -6,7 +6,8 @@
   "HEADER": {
     "HOME": "Home",
     "EDUCATION": "Education",
-    "PROJECTS": "Projects"
+    "PROJECTS": "Projects",
+    "TECH_CHALLENGES": "Challenges"
   },
   "HERO": {
     "TITLE": "Hi! I'm",
@@ -40,6 +41,9 @@
     "MYKANBANBOARD": {
       "DESCRIPTION": "It's a simple but powerful project management tool that allows the user to work on multiple boards and customize them. Admit drag and drop, responsive design, and accessibility."
     },
+    "ESHOPBACKEND": {
+      "DESCRIPTION": "Backend of an online store built with .NET using Minimal APIs, EF Core, PSQL, Redis (cart management), and Stripe (payments), orchestrated with Docker."
+    },
     "ELEGANT2048": {
       "DESCRIPTION": "It's a clone of the popular 2048 game built using React. It is a single-player puzzle game where the objective is to combine tiles with the same value to create a tile with the value of 2048."
     },
@@ -51,6 +55,33 @@
     },
     "POSAM": {
       "DESCRIPTION": "POS with supplier, inventory and bills modules, customer profiles, financial states dashboards, product tags, stock notifications and a reminder system."
+    }
+  },
+  "TECH_CHALLENGES": {
+    "TITLE": "Tech Challenges",
+    "HPL": {
+      "TITLE": "HPL 🤜",
+      "DESCRIPTION": "A translator of HPL (Hand Programming Language)."
+    },
+    "RANDOM_CAT_FACT": {
+      "TITLE": "Random Cat Fetch 😺",
+      "DESCRIPTION": "Get a random cat fact from an API and an image, from another API, with the first 3 words of the fact and show them."
+    },
+    "USER_TABLE": {
+      "TITLE": "User Table 🙎‍♂️",
+      "DESCRIPTION": "Show fake data users collection. As a user, you should be able to search, sort and filter."
+    },
+    "FULLSTACK_JUNIOR": {
+      "TITLE": "Fullstack Junior 💻",
+      "DESCRIPTION": "A collection of 7 programming challenges for junior Full Stack developers."
+    },
+    "MOVIE_APP": {
+      "TITLE": "Movie App 🎥",
+      "DESCRIPTION": "Movie App using OmbdAPI with searching and filtering focused on performance."
+    },
+    "SHOPPING_CART": {
+      "TITLE": "Shopping Cart 🛒",
+      "DESCRIPTION": "An ecommerce made using React, with context and persistence."
     }
   }
 }

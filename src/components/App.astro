@@ -9,7 +9,9 @@ import SectionContainer from "../components/SectionContainer.astro";
 import EducationIcon from "../icons/Education.astro";
 import ProjectIcon from "../icons/Project.astro";
 import Projects from "../components/Projects.astro";
+import TechChallengesIcon from "../icons/TechChallenges.astro";
 import { getI18N } from "../i18n";
+import TechChallengesCards from "./TechChallengesCards.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -19,10 +21,10 @@ const i18n = getI18N({ currentLocale });
   <main>
     <SectionContainer class="pb-28" id="home">
       <header class="flex items-center gap-4 sm:flex-row flex-col">
-        <h1 class="text-white leading-9 text-[32px] sm:text-5xl font-bold">
+        <h1 class="text-slate-200 font-light leading-9 text-3xl sm:text-4xl">
           {i18n.HERO.TITLE}
           <span
-            class="bg-gradient-to-r text-transparent bg-clip-text from-teal-400 via-emerald-500 to-cyan-600"
+            class="text-[32px] sm:text-5xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-teal-400 via-emerald-500 to-cyan-600"
             >Luis Nivar</span
           >
         </h1>
@@ -60,9 +62,17 @@ const i18n = getI18N({ currentLocale });
     <SectionContainer id="projects">
       <h2 class="text-white text-3xl font-bold flex items-center gap-4">
         <ProjectIcon class="size-10" />
-        Projects
+        {i18n.PROJECTS.TITLE}
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="techchallenges">
+      <h2 class="text-white text-3xl font-bold flex items-center gap-4">
+        <TechChallengesIcon class="size-10" />
+        {i18n.TECH_CHALLENGES.TITLE}
+      </h2>
+      <TechChallengesCards />
     </SectionContainer>
   </main>
 </Layout>
